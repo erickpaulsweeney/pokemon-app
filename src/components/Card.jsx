@@ -40,7 +40,7 @@ function Card(props) {
                 <>
                     <div className="pokemon-name">{data.name}</div>
                     <div className="pokemon-order">{data.id}</div>
-                    <div className="pokemon-img"><img className="img-main" src={data.sprites.other.official_artwork.front_default} alt="" /></div>
+                    <div className="pokemon-img"><img className="img-main" src={data.sprites.front_default} alt="" /></div>
                     <div className="container-types">
                         {data.types.map(el => <div key={el.type.name} className="pokemon-type" style={{ backgroundColor: colors[el.type.name] }}>{el.type.name}</div>)}
                     </div>
